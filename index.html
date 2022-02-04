@@ -69,6 +69,7 @@ src="https://www.facebook.com/tr?id=121405129854421&ev=PageView&noscript=1"
       scheduleOne();
     } else {
       fbq('track', 'Purchase', {value: Math.round(Math.random() * 1000) / 10, currency: 'USD'});
+      scheduleOne();
     }
   })()
 </script>
