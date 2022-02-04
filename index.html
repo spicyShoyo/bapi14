@@ -40,6 +40,11 @@ body {font-size:16px;}
   (function() {
     const eventsToFire = [
       () => fbq('track', 'Schedule'),
+      () => fbq('track', 'Search'),
+      () => fbq('track', 'Subscribe'),
+      () => fbq('track', 'liuz_test'),
+      () => fbq('track', 'LiuzTest2'),
+      () => fbq('track', 'Lead'),
       () => fbq('track', 'Purchase', {value: Math.round(Math.random() * 1000) / 10, currency: 'USD'}),
       () => fbq('track', 'AddToCart', {value: Math.round(Math.random() * 1000) / 10, currency: 'USD'}),
       () => fbq('track', 'SubmitApplication'),
